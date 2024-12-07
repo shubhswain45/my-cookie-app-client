@@ -28,7 +28,7 @@ export default function handler(
     secure: true, // Use secure cookie for production
     maxAge: 3600, // Expire in 1 hour
     path: "/", // Cookie available across the entire site
-    sameSite: 'none', // Prevent CSRF attacks
+    sameSite: 'strict', // Prevent CSRF attacks
   });
 
   // Set the cookie in the response header
